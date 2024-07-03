@@ -1,0 +1,76 @@
+/* Toggle switch container */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-top: 20px; /* Adjust the top margin to move the switch up */
+    margin-left: auto;
+    margin-right: auto;
+   margin-bottom: 30px;
+}
+  
+  /* Toggle switch input */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* Toggle switch slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #555;
+    transition: .4s;
+    border-radius: 34px;
+  }
+  
+  /* Toggle switch slider on */
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  /* Toggle switch input checked */
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  /* Toggle switch input checked - slider on */
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  /* Style the toggle switch label */
+  .switch label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Arial, sans-serif;
+    color: #aaa;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  /* Style the light mode icon */
+  .light-mode-icon {
+    margin-right: 8px;
+  }
+  
+  /* Style the dark mode icon */
+  .dark-mode-icon {
+    margin-left: 8px;
+  }
+  
