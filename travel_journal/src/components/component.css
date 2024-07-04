@@ -1,0 +1,40 @@
+
+.head{
+    background-color:#F55A5A;
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter";
+    color: white;
+    margin-bottom: 40px;
+}
+
+.place{
+    padding-top:40px;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    height: 336px;
+   border-bottom: 1px solid #E5E5E5;
+   padding-bottom:40px ;
+    width: 800px;
+    font-family: "Inter";
+}
+.firstLine{
+display: flex;
+flex-direction: row;
+
+}
+.img{
+    border-radius:10px;
+    width: 250px;
+    height: 336px;
+    margin-right: 40px;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+}
