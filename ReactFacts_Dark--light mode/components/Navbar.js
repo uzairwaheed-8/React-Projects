@@ -1,6 +1,9 @@
 import React from "react"
 
 export default function Navbar(props) {
+    function handleChange(){
+        props.setDarkMode(prevState => !prevState)
+    }
     return (
          <nav 
             className={props.darkMode ? "dark": ""}
@@ -17,7 +20,7 @@ export default function Navbar(props) {
                 <p className="toggler--light">Light</p>
                 <div 
                     className="toggler--slider"
-                    onClick={props.toggleDarkMode}
+                    onClick={handleChange}
                 >
                     <div className="toggler--slider--circle"></div>
                 </div>
